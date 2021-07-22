@@ -2,14 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vendors</title>
-	<link rel="stylesheet" href="../styles/stylesheet.css">
+	<title>Vendors</title>	
+    <!-- Bootstrap CSS 5 -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/stylesheet.css">
 	<script src="../script/home.js"></script>
 </head>
 <body>
 	<header class="menu_container">
         <div class="menu_item" id="menu_item-1">
-            <h1><a href="index.html">Food Mate</a></h1>
+            <h1 style="font-weight: bold;"><a href="index.html">Food Mate</a></h1>
         </div>
         <div class="menu_item" id="menu_item-2">
             <nav>				
@@ -27,6 +29,29 @@
             </nav>
         </div>
     </header>
-	<h1>Vendors</h1>
+    <section>
+        <h1>Vendors</h1>        
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th width=50px></th>
+                </tr>                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proper fish</td>
+                    <td>Seafood</td>
+                    <td><button>Order</button></td>
+                </tr>
+                <tr>
+                    <td>Dong Ting Chun</td>
+                    <td>Hunan</td>
+                    <td><button>Order</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>	
 </body>
 </html>
