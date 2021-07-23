@@ -1,6 +1,8 @@
 # Simple-Website-Project
 Per Scholas HHTML/CSS/JavaScript assessment project.
 Showcases implementation of a clean HTML structure that is both visually appealing and user-friendly.
+You can find the project here: https://github.com/hryungk/Simple-Website-Project
+
 
 ## Main functionalities
 This is a supposedly food delivery service application. The main functionalities inlcude
