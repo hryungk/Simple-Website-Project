@@ -3,6 +3,7 @@ html, body  {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 header {
@@ -10,7 +11,7 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: bold;    
 }
-section {
+.width-60 {
     width: 60%;
     position: relative;
     margin-left: 20%;
@@ -27,19 +28,20 @@ h1 {
 ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
-a {
+header a {
     text-decoration: none;
     color: beige;
 }
-a:visited {
+header a:visited {
     color: beige;
 }
-li a {
+header  a {
     padding: 20px;
 }
-li a:hover {
-    color: rebeccapurple;
+header a:hover {
+    color: orange;
 }
 .menu_container {
     display: flex;
@@ -57,7 +59,7 @@ li a:hover {
 }
 .menu_item nav ul li {
     flex: 1;
-    padding: 20px;
+    padding: 20px 1em;
 }
 
 /* register.html */
@@ -66,10 +68,10 @@ fieldset {
 }
 .r-input {
 	padding: 15px;
-	width: 45%;
+	width: 50%;
 	float: left;
 }
-.r-input * {
+.r-input * , .zip-inp{
 	width: 90%;
 	padding: 20px;
 	font-size: 14px;
@@ -107,4 +109,53 @@ fieldset {
 	color: white;
 	border-radius: 7px;
 	border: 0;
+}
+
+/* index.html */
+#img {
+    background-image: url('../images/pexels-ella-olsson-1640777.jpg');
+    background-size: cover;
+    height: 600px;       
+    margin: 0;
+    width: 100%;
+}
+#img h1 {
+	margin: 0 auto;
+	padding: 0 2em;
+	position: relative;
+	top: 25%;	
+	color: white;
+	font-size: 40pt;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px black;
+}
+#img p {
+    position: absolute;
+    top: 640px;
+    margin: 10px;
+    color: gray;
+    /* text-shadow: 1px 1px 1px white; */
+}
+#how {
+    display: flex;
+    padding: 20px;
+}
+#how div {
+    border: 1px solid beige;
+    box-shadow: 1px 1px 2px gray;
+    /* background-color:beige; */
+    border-radius: 1em;
+    padding: 10px;
+    margin: 10px;
+}
+#how div h2 {
+    text-align: center;
+}
+
+#find-driver {
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 300px;
 }

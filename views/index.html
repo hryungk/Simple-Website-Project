@@ -28,8 +28,46 @@
             </nav>
         </div>
     </header>
-	<section>
-        <h1>Welcome!</h1>   
+	<section id="img">
+        <!-- <img src="../images/pexels-ella-olsson-1640777.jpg" /> -->
+        <h1>Your Favorite Restaurants Delivered to Your Doorstep</h1>
+        <p>Photo by Ella Olsson from Pexels</p>
     </section>
+    <section>
+        <h1>How It Works</h1>
+        <div id="how">
+            <div>
+                <h2>1. Register For an Account</h2>
+                <p>The first thing you ned to do is register for an account.</p>
+                <p>After registering, you will be able to submit requests for pickup and have your food delivered to your door!</p>
+            </div>
+            <div>
+                <h2>2. Order Your Food</h2>
+                <p>Place an order for food from a local restaurant and the system will automatically find the nearest driver at the best cost.</p>
+            </div>
+            <div>
+                <h2>3. Confirm Your Request</h2>
+                <p>Before any request is submitted, you have the chance to review it and make any changes or cancellations.</p>
+            </div>
+        </div>
+    </section>
+    <section id="find-driver"> 
+        <h1>Find a Driver near you</h1>
+        <p>Type in your zip code below and click Go! to find a drive near you</p>
+        <div>
+            <input type="number" pattern="\d*" maxlength="5" placeholder="Type in 5-digit zipcode" id="zip-inp"/>
+            <input type="submit" value="Go!" class="order-btn" id="zip-btn"/>
+        </div>
+    </section>
+
+    <script src="../script/script-index.js"></script>
+    <script>
+        const zipInp = document.getElementById('zip-inp');
+        zipInp.addEventListener('keydown', function() {
+            if (event.key == 'Enter') {
+                checkZipcode();
+            }
+        });
+    </script>
 </body>
 </html>
