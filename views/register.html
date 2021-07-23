@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Register</title>
+    <!-- Bootstrap CSS 5 -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
 	<link rel="stylesheet" href="../styles/stylesheet.css">
-	<script src="../script/home.js"></script>
 </head>
 <body>
 	<header class="menu_container">
         <div class="menu_item" id="menu_item-1">
-            <h1><a href="index.html">Food Mate</a></h1>
+            <h1 style="font-weight: bold;"><a href="index.html">Food Mate</a></h1>
         </div>
         <div class="menu_item" id="menu_item-2">
             <nav>				
@@ -27,6 +28,50 @@
             </nav>
         </div>
     </header>
-	<h1>Register</h1>
+	<section>
+        <h1>Register</h1> 
+        <div>
+            <p>Please fill out the form below:</p>
+            <form action="#">
+                <fieldset>
+                    <legend>Details</legend>
+                    <div class="r-input">
+						<input type="email" name="eMail" placeholder="Email" required="required" />
+					</div>
+					<div class="r-input">				
+						<input type="password" name="password" placeholder="Password" required="required" />
+					</div>
+					<div class="r-input">
+						<input type="text" name="firstName" placeholder="First Name" required="required" />
+					</div>
+					<div class="r-input">
+						<input type="text" id="lastName" name="lastName" placeholder="Last Name" required="required" />
+					</div>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+					<div class="r-input">
+						<input type="text" name="address-1" placeholder="Address" required="required" />
+					</div>
+					<div class="r-input">
+						<input type="text" name="address-2" placeholder="Street" />
+					</div>
+					<div class="r-input">
+						<input type="text" name="address-3" placeholder="City" required="required" />
+					</div>
+                    <div class="r-input">
+						<select id="dropdown" name="address-5" placeholder="State" required="required">
+                            <option value="" selected disabled>State</option>
+                        </select>
+					</div>
+					<div class="r-input">
+						<input type="number" name="address-4" placeholder="Zipcode" maxlength="5" required="required" />
+					</div>
+                </fieldset>
+                <input class="reg-btn" type="submit" value="Register">
+            </form>
+        </div>               
+	    <script src="../script/script-register.js"></script>        
+    </section>	
 </body>
 </html>
